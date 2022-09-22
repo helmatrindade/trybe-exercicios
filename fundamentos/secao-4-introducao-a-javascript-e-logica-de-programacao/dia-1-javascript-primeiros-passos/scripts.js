@@ -26,5 +26,13 @@ if (nume1 > nume2 && nume1 > nume3){
     console.log('nume3 é maior que nume1 e nume2!');
 };
 
+let nota = 2;
+if (nota > 0){
+    console.log('positive');
+}  else if (nota < 0){
+    console.log('negative');
+}  else{
+    console.log('zero');
+}
 
 
