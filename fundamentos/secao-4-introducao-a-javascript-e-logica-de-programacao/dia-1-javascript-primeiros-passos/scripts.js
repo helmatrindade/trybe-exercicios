@@ -35,4 +35,18 @@ if (nota > 0){
     console.log('zero');
 }
 
+const ladoA = 60;
+const ladoB = 30;
+const ladoC = -50;
+let somaTriangulo = ladoA + ladoB + ladoC;
+let verificaAngulo = ladoA > 0 && ladoB > 0 && ladoC > 0;
 
+if (verificaAngulo){
+    if (somaTriangulo === 180){
+        console.log(true);
+    } else {
+        console.log(false);
+    } 
+} else {
+    console.log('erro');
+}
