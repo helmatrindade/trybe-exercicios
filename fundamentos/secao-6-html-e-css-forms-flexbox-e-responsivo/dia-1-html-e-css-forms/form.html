@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <h1>Formulario TrybeTrip</h1>
+        <br>
+        <section>
+            <label for="full-name">Nome Completo:</label>
+            <input type="text" name="name" id="full-name" autocomplete="off" class="form" placeholder="Digite seu nome completo" maxlength="40" minlength="10">
+        </section>
+        <br>
+        <section>
+            <label for="">Email:</label>
+            <input type="email" name="emailuser" id="e-mail" class="form" maxlength="50" minlength="10" placeholder="Digite seu email">
+        </section>
+        <br>
+        <h3>Destino Preferido:</h3>
+        <input type="radio" name = "destino" id="destino-preferido1" value="d">
+        <label for="destino-preferido1">Cidade</label>
+
+        <input type="radio" name="destino" id="destino-preferido2" value="c">
+        <label for="detino-preferido2">Campo</label>
+
+        <input type="radio" name="destino" id="destino-preferido3" value="p">
+        <label for="">Praia</label>
+
+        <input type="radio" name="destino" id="destino-preferido4" value="p">
+        <label for="">Montanhas</label>
+        <br>
+        <h3>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h3>
+        <section>
+            <textarea name="resumo" id="motivo" cols="70" rows="9" maxlength="500" placeholder="Escreva aqui o porque você merece ganhar em até 500 caracteres."></textarea>
+        </section>
+
+        <section>
+        <h3>Qual a melhor data para realizar sua viagem?</h3>
+        <input type="date" name="data" id="day">
+        </section>
+
+        <h3>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</h3>
+        <input type="checkbox" name="yes" id="ofertas" value="ofertas-aqui">
+        <label for="ofertas">Sim</label>
+
+        <h3>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</h3>
+        <input type="checkbox" name="aceito" id="sim">
+        <label for="sim">Eu concordo.</label>
+        <br>
+        <br>
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
