@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+        <h1>Formulario Trybe Trip</h1>
+        <br>
+        <section id="corpo" class="conteudo">
+        <section>
+            <label for="full-name">Nome Completo:</label>
+            <input type="text" name="name" id="full-name" autocomplete="off" class="form-control" maxlength="40" minlength="10">
+        </section>
+        <br>
+        <section class="">
+            <label for="">Email:</label>
+            <input type="email" name="emailuser" id="e-mail" class="form form-control" maxlength="50" minlength="10">
+        </section>
+        <br>
+        <h5>Destino Preferido:</h5>
+        <input type="radio" name = "destino" id="destino-preferido1" value="d">
+        <label for="destino-preferido1">Cidade</label>
+
+        <input type="radio" name="destino" id="destino-preferido2" value="c">
+        <label for="detino-preferido2">Campo</label>
+
+        <input type="radio" name="destino" id="destino-preferido3" value="p">
+        <label for="">Praia</label>
+
+        <input type="radio" name="destino" id="destino-preferido4" value="p">
+        <label for="">Montanhas</label>
+        <br>
+        <h5>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h5>
+        <section>
+            <textarea name="resumo" id="motivo" cols="70" rows="9" maxlength="500"></textarea>
+        </section>
+
+        <section>
+        <h5>Qual a melhor data para realizar sua viagem?</h5>
+        <input type="date" name="data" id="day">
+        </section>
+
+        <h5>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</h5>
+        <input type="checkbox" name="yes" id="ofertas" value="ofertas-aqui">
+        <label for="ofertas"><strong>sim</strong></label>
+
+        <h5>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</h5>
+        <input type="checkbox" name="aceito" id="sim">
+        <label for="sim"><strong>sim</strong></label>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-primary">Enviar</button>
+        </section>
+        </fieldset>
+    </form>
+</body>
+</html>

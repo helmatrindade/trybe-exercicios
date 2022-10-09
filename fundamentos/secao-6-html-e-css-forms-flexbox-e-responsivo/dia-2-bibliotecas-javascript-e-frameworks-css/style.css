@@ -1,0 +1,47 @@
+body{
+    background-image: url(viagem.jpeg);
+    background-size: cover;
+    
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+fieldset{
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgba(93, 106, 96, 0.507);
+}
+
+input{
+    background-color: rgba(93, 106, 96, 0.392);
+    border: 0;
+    color: black;
+}
+
+.form-control{
+    background-color:rgba(93, 106, 96, 0.392);
+    border-color: rgba(93, 106, 96, 0.507);
+
+}
+
+#motivo{
+    background-color: rgba(93, 106, 96, 0.392);
+}
+
+h1{ 
+    text-align: center;
+    color: rgba(18, 19, 18, 0.989);
+    
+}
+
+#motivo{
+    width: 600px;
+}
+
+h5{
+    margin: 8px;
+}
