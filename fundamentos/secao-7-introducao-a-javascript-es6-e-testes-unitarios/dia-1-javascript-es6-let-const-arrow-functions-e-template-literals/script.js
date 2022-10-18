@@ -1,3 +1,4 @@
+//Parte 1
 function testingScope(escopo) {
     if (escopo === true) {
       var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -72,3 +73,16 @@ oddsAndEvens.sort(function (a, b){
 })
 
 console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+
+//Parte 2
+//Exercicio 1
+const fatorial = (number) => {
+    let result = 1;
+    for (let index = 1; index <= number; index += 1){
+    result *= index;
+    }
+   return result;
+}
+
+const valor = fatorial(5);
+console.log(`Esse é o fatorial ${valor}`);
