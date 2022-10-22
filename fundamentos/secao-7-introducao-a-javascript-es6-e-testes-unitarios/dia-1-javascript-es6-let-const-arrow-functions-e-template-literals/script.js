@@ -86,3 +86,20 @@ const fatorial = (number) => {
 
 const valor = fatorial(5);
 console.log(`Esse é o fatorial ${valor}`);
+
+
+//Exercicio 2
+const longesWord = (frase) => {
+  let arrayPalavras = frase.split(' '); // trasnformei em uma array de strings
+  let maior = 0;  // contador que vai contar a maior palavra
+  let maiorPalavra = ''; // para armazenar a maior palavra
+  for (const palavras of arrayPalavras) {
+    if (palavras.length > maior) {
+      maior = palavras.length;
+      maiorPalavra = palavras;
+    }
+  }
+  return maiorPalavra;
+}
+
+console.log(longesWord('O dia é maravilhoso'));
