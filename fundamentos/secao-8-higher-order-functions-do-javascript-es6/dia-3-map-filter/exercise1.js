@@ -87,7 +87,7 @@ const expectedResult = [
   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
 
-function formatedBookNames() {
+function nameAndAge() {
   return books.map((array) => {  
     let ageAuthor = array.releaseYear - array.author.birthYear;
     let resultado = {
@@ -98,4 +98,7 @@ function formatedBookNames() {
   })
   .sort((idade1, idade2) => idade1.age - idade2.age);
 }
-console.log(formatedBookNames());
+//console.log(nameAndAge());
+
+
+module.exports = books;
