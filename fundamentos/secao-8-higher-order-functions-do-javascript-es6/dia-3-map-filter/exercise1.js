@@ -73,4 +73,29 @@ return  books.map((array) => {
   }
 })
 };
-console.log(arrayStrings());
+//console.log(arrayStrings());
+
+
+// Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age, com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha, considerando suas idades quando o livro foi lançado. use as funções map, sort
+
+const expectedResult = [
+  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  'Fundação - Ficção Científica - Isaac Asimov',
+  'Duna - Ficção Científica - Frank Herbert',
+  'A Coisa - Terror - Stephen King',
+  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+];
+
+function formatedBookNames() {
+  return books.map((array) => {  
+    let ageAuthor = array.releaseYear - array.author.birthYear;
+    let resultado = {
+      author: array.name,
+      age: ageAuthor,
+    }
+    return resultado;
+  })
+  .sort((idade1, idade2) => idade1.age - idade2.age);
+}
+console.log(formatedBookNames());
