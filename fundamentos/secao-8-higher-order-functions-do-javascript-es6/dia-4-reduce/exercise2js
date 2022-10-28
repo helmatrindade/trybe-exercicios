@@ -66,7 +66,33 @@ const books = [
 
 function reduceNames() {
   return books.reduce((acc, curr) => {
-    return `${acc} ${curr.author.name}`;
-  },'')
-}
-console.log(reduceNames());
+    return `${acc} ${curr.author.name}`;  //contador vai pegando o nome do autor
+  },'') // valor inicial, uma string fazia
+};
+//console.log(reduceNames());
+
+
+
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+
+function averageAge() {
+  const tamanho = books.length; // tamanho do objeto
+  return books.reduce((acc, curr) => {
+    return acc + (curr.releaseYear - curr.author.birthYear) / tamanho // peguei o ano de laçamento dos livros e subtrair pelo ano de narcimento e dividi pelo tamanho
+  },0).toFixed();
+};
+console.log(averageAge());
+
+
+//Encontre o livro com o maior nome.
+
+function longestNamedBook() {
+  return books.reduce((acc, book) => {
+    if (book.name.length > acc.name.length){ //se o tamanho do valor atual do meu livro for maior que a contagem do tamanho do nome
+      return book; //retorna o valor atual
+    } else {
+      return acc; //se não retorna a contagem do tamanho maior
+    }
+  })
+};
+//console.log(longestNamedBook());
