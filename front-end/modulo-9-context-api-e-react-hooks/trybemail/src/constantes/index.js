@@ -1,2 +1,2 @@
-export const nLido = 0;
-export const lido = 1;
+export const NLIDO = 0;
+export const LIDO = 1;
